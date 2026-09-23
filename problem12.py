@@ -16,10 +16,8 @@ for i in range(1, 100000000):
     for j in range(i, 100000000, i):
         array[j] += 1
 
-for i in range(len(array)):
-    if array[i] > 500:
-        if istriangle(i):
-            print(i)
-            break
+for n in range(1,100000):
+    if array[int(((n*(n+1))/2))] > 500:
+        print(((n*(n+1))/2))
 
 # currently stuck... going to move on for now
